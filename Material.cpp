@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #include "Material.h"
 
 Matte::Matte(const glm::vec3 &albedo) : albedo_(albedo) {}

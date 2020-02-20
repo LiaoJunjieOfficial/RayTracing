@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #include "Geometry.h"
 
 Sphere::Sphere(const glm::vec3 &center, float radius, Material *material) : center_(center), radius_(radius),

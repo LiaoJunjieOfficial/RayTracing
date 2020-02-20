@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #include "Renderer.h"
 
 Renderer::Renderer(Scene *scene, Camera *camera) : scene_(scene), camera_(camera) {}

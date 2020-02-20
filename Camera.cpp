@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #include "Camera.h"
 
 Camera::Camera(const glm::vec3 eye, const glm::vec3 look, const glm::vec3 up, float fov, float aspect, float aperture,

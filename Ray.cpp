@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #include "Ray.h"
 
 Ray::Ray() = default;

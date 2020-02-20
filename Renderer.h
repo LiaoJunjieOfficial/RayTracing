@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #ifndef RAY_TRACING_RENDERER_H
 #define RAY_TRACING_RENDERER_H
 

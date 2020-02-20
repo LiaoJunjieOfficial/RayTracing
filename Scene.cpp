@@ -1,7 +1,3 @@
-//
-// Created by Junjie Liao on 2020-02-16.
-//
-
 #include "Scene.h"
 
 Scene::Scene(Geometry **geometries, int size) : geometries(geometries), size_(size) {}
