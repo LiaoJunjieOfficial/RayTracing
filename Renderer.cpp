@@ -39,5 +39,3 @@ void Renderer::render(const std::string& filename, int width, int height, int nu
     }
     file.close();
 }
-
-
