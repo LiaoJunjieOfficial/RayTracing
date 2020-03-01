@@ -9,7 +9,7 @@ public:
     Scene(Geometry **geometries, int size);
     bool hit(const Ray &ray, float tMin, float tMax, Hit &hit) const override;
 private:
-    Geometry **geometries{};
+    Geometry **geometries_{};
     int size_{};
 };
 

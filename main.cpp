@@ -63,7 +63,7 @@ int main() {
             new Metal(glm::vec3(0.9f), 0.0f));
     geometries[3] = new Sphere(glm::vec3(-0.6f, 0.0f, -1.0f), 0.25f,
             new Dielectric(1.5f, 0.0f));
-//    auto *scene = new Scene(geometries, 4);
+//    auto *scene = new Scene(geometries_, 4);
     Scene *scene = randomScene();
     auto *camera = new Camera(eye, look,glm::vec3(0.0f,1.0f,0.0f), 90.0f,
             (float) width / (float) height,0.005f, 1.0f);
