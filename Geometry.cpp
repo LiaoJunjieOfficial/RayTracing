@@ -5,9 +5,9 @@ Sphere::Sphere(const glm::vec3 &center, float radius, Material *material) : cent
 
 bool Sphere::hit(const Ray &ray, float tMin, float tMax, Hit &hit) const {
     glm::vec3 oc = ray.o() - center_;
-    float a = dot(ray.d(), ray.d());
-    float b = dot(oc, ray.d());
-    float c = dot(oc, oc) - radius_ * radius_;
+    float a = glm::dot(ray.d(), ray.d());
+    float b = glm::dot(oc, ray.d());
+    float c = glm::dot(oc, oc) - radius_ * radius_;
     float delta = b * b - a * c;
     if (delta > 0) {
         float temp = (-b - sqrt(delta)) / a;
