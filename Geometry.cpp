@@ -14,7 +14,7 @@ bool Sphere::hit(const Ray &ray, float tMin, float tMax, Hit &hit) const {
         if (tMin < temp && temp < tMax) {
             hit.t = temp;
             hit.coord = ray.pointAt(hit.t);
-            hit.normal = (hit.coord - center_) / radius_;
+            hit.normal = hit.coord - center_;
             hit.material = material_;
             return true;
         }
@@ -22,7 +22,7 @@ bool Sphere::hit(const Ray &ray, float tMin, float tMax, Hit &hit) const {
         if (tMin < temp && temp < tMax) {
             hit.t = temp;
             hit.coord = ray.pointAt(hit.t);
-            hit.normal = (hit.coord - center_) / radius_;
+            hit.normal = hit.coord - center_;
             hit.material = material_;
             return true;
         }

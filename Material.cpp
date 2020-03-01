@@ -44,9 +44,8 @@ bool Dielectric::scatter(const Ray &incidentRay, const Hit &hit, glm::vec3 &atte
     return true;
 }
 
-
 float Dielectric::schlick(float cosine, float eta) {
     float r0 = (1.0f - eta) / (1.0f + eta);
     r0 = r0 * r0;
-    return r0 + (1.0f - r0) * (float) pow((1.0f - cosine),5);
+    return r0 + (1.0f - r0) * (float) pow((1.0f - cosine), 5);
 }
